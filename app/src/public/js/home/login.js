@@ -26,9 +26,10 @@ function login() {
       } else {
         alert(res.msg);
       }
-    }).catch((err)=>{
-      console.error(new Error("로그인 중 에러 발생"))
     })
+    .catch((err) => {
+      console.error(new Error("로그인 중 에러 발생"));
+    });
 }
 
 /* Restful : API
@@ -52,7 +53,4 @@ function login() {
 
   <Restful : Rest(사이트 구성을 따르는)한 >
   <Restful API : Rest한 API>
-
-
-
 */
