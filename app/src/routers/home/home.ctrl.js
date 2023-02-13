@@ -9,13 +9,16 @@ const output = {
   login: (req, res) => {
     res.render("home/login");
   },
+  register: (req,res) => {
+    res.render("home/register")
+  }
 };
 
 // const users = {
 //   id: ["hoodie", "신개발", "이팀장"],
 //   psword: ["1234", "1234", "123456"],
 // };
-
+  
 const process = {
   login: (req, res) => {
     const id = req.body.id;
